@@ -4,7 +4,7 @@
     <title>21 Cards by Ostati</title>
 	
 	<meta property="og:title" content="21 Cards by Ostati" />
-    <meta property="og:description" content="ბაბუაჩემის ფოკუსი" />
+    <meta property="og:description" content="21 Cards Trick" />
     <meta property="og:image" content="snap.png" /> 	
 	
     <script type="text/javascript">
@@ -75,7 +75,7 @@
         var guess;
         var table;
         var guessTable;
-        var messages = ["ამოირჩიეთ კარტი და მიუთითეთ რომელ რიგშია იგი მოთავსებული... გაიმეორეთ 3-ჯერ.", "კიდევ ერთხელ, რომელ რიგშია თქვენი დამახსოვრებული კარტი...", "კეთილი და პატიოსანი. ეხლა რომელ რიგშია?"]   
+        var messages = ["Remember the card and tell me in which row it is located.", "Which row is your card in now?", "How about now?"]   
 
         function getRandomNumberArray(min, max, size) {
             var array = [];
@@ -187,13 +187,13 @@
     <div id="guessTable" style="position:absolute">
         <table cellpadding="5" cellspacing="5">
             <tr>
-                <td style="font-weight:bold;font-size:larger">აი თკვენი კარტი! :-)</td>
+                <td style="font-weight:bold;font-size:larger">Here's your card! :-)</td>
             </tr>        
             <tr>
                 <td><div id="guess"></div> </td>
             </tr>
             <tr>
-                <td><button onclick="init()">დავიწყოთ თავიდან!</button></td>
+                <td><button onclick="init()">Start Over!</button></td>
             </tr>
         </table>
     </div>     
@@ -203,13 +203,13 @@
                 <td colspan="2"><div id="msg" style="font-weight:bold;font-size:larger"></div></td>
             </tr>
             <tr>
-                <td><div id="row1"></div></td><td><button onclick="shuffle(1)">ამ რიგშია ჩემი კარტი</button></td>
+                <td><div id="row1"></div></td><td><button onclick="shuffle(1)">It's in this row!</button></td>
             </tr>
             <tr>
-                <td><div id="row2"></div></td><td><button onclick="shuffle(2)">ამ რიგშია ჩემი კარტი</button></td>
+                <td><div id="row2"></div></td><td><button onclick="shuffle(2)">It's in this row!</button></td>
             </tr>
             <tr>
-                <td><div id="row3"></div></td><td><button onclick="shuffle(3)">ამ რიგშია ჩემი კარტი</button></td>
+                <td><div id="row3"></div></td><td><button onclick="shuffle(3)">It's in this row!</button></td>
             </tr>                
         </table>  
     </div>        
